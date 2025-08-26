@@ -1,22 +1,32 @@
-// Write your imports here if needed
+/*
+ * Name: Quadratic Formula Exercise
+ * Purpose: To collect input (a, b, c values of a function) and 
+   calaculate the roots of a function
+ * Programmer: Biruk Yidnekachew
+ * Date: 26 August 2025
+ */
+
+// Imports Scanner for input
 import java.util.Scanner;
 
 
 public class Exercise {
    public static void main(String[] args){
+      // Declares Scanner object
       Scanner myObj = new Scanner(System.in);
       
+      // Collects input for each variable of the function
       System.out.print("Enter a: ");
       double a = myObj.nextDouble();
-
       System.out.print("Enter b: ");
       double b = myObj.nextDouble();
-
       System.out.print("Enter c: ");
       double c = myObj.nextDouble();
 
+      // Calculates discriminant variable
       double discriminant = ( (Math.pow(b, 2)) - (4*a*c) );
 
+      // Decsion tree for quadratic formula
       if (discriminant < 0) {
          System.out.print("The equation has no real roots");
       }
